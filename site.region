@@ -6,10 +6,12 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  {.end}
 		{squarespace-headers}
-
+		<link rel="stylesheet" href="page-scroll-effects/css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="page-scroll-effects/css/style.css"> <!-- Resource style -->
+		<script src="page-scroll-effects/js/modernizr.js"></script> <!-- Modernizr -->
 	</head>
 	{.if template.mobileStylesEnabled}{.or}<!-- Mobile Styles Disabled -->{.end}
-	<body class="{squarespace.page-classes}" id="{squarespace.page-id}">
+	<body class="{squarespace.page-classes}" id="{squarespace.page-id}" data-hijacking="off" data-animation="scaleDown">
 
 	<div id="site">
 		<div id="canvas">
@@ -117,6 +119,9 @@
 	    });
 	  </script>
 	{.end}
-
+	<script src="page-scroll-effects/js/jquery-2.1.4.js"></script>
+	<script src="page-scroll-effects/js/velocity.min.js"></script>
+	<script src="page-scroll-effects/js/velocity.ui.min.js"></script>
+	<script src="page-scroll-effects/js/main.js"></script> <!-- Resource jQuery -->
 	</body>
 </html>
